@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#header_stick{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+#row{
+    width: 1140px;
+    height: 100%;
+}
+#navbar_col{
+    width: 1140px;
+    /* background-color: antiquewhite; */
+    height: 100%;
+    padding: 0 15px
+    
+}
+#main_nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#image_nav{
+    background-image: url(klassy-logo.png);
+    height: 55px;
+    width: 170px;
+}
+#links_nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+#links_nav a{
+    text-decoration: none;
+    color: black;
+}
+#links_nav a:hover{
+    cursor: pointer;
+}
+
+#asdf{
+    padding: 0 0 0 15px;
+}
+
+/* links navbar property */
+#home_nav{
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fb5849 !important;
+    letter-spacing: 1px;
+}
+#about_nav{
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    height: 40px;
+    transition: color 0.3s ease-in-out;
+}
+#menu_nav{
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+#chefs_nav{
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+#features_nav{
+    padding: 0 30px 0 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+#submenu_nav{
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    /* background-color: rebeccapurple; */
+    border: 0.5px solid black;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+    display: none;
+    /* transition: all 4s ease-in-out; */
+    background-color: white;
+    z-index: 2;
+}
+#submenu_nav li{
+    height: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+#submenu_link1:hover{
+    color: #fb5849 !important;
+    /* background-color: cadetblue; */
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: snow;
+}
+#submenu_link2:hover{
+    color: #fb5849 !important;
+    /* background-color: cadetblue; */
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: snow;
+}
+#submenu_link3:hover{
+    color: #fb5849 !important;
+    /* background-color: cadetblue; */
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: snow;
+}
+#submenu_link4:hover{
+    color: #fb5849 !important;
+    /* background-color: cadetblue; */
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: snow;
+}
+
+#submenu_nav a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100 !important;
+    /* font-weight: lighter; */
+    text-decoration: none;
+    color: black;
+}
+#contact_us_nav{
+    padding: 0 0 0 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fb5849 !important;
+    letter-spacing: 1px;
+}
+
+#about_nav:hover, #menu_nav:hover, #chefs_nav:hover, #features_nav:hover{
+    color: #fb5849 !important;
+}
+
+
+
+
+
+/* Home page */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#home_body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+#left_content_home{
+    background-image: url(top-left-bg.jpg);
+    width: 33.33333%;
+    height: 700px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inner_content_left_content_about{
+    color: white;
+}
+#inner_content_left_content_about h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 54px;
+}
+
+#inner_content_left_content_about h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 5px 0 0 0;
+    letter-spacing: 3px;
+}
+
+#inner_content_left_content_about div{
+    margin: 25px 0 15px 0;
+    padding: 12px 25px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+#inner_content_left_content_about div a{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fb5849 !important;
+}
+
+#inner_content_left_content_about div:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+#right_content_home{
+    height: 800px;
+    width: 66.6666%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+#left_arrow{
+    position: absolute;
+    top: 43.75%;
+    left: 30px;
+    color: white;
+    font-size: 25px;
+    padding: 12px;
+    background-color: #fb5849;
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: all 0.2s ease-in-out;
+}
+#right_arrow{
+    position: absolute;
+    top: 43.75%;
+    right: 30px;
+    color: white;
+    font-size: 25px;
+    padding: 12px;
+    background-color: #fb5849;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+#right_arrow:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#left_arrow:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+/* image home page slideshow */
+#image_right_content_home1{
+    background-image: url(slide-01.jpg);
+    height: 700px;
+    width: 100%;
+}
+#image_right_content_home2{
+    background-image: url(slide-02.jpg);
+    height: 700px;
+    width: 100%;
+    display: none;
+}
+#image_right_content_home3{
+    background-image: url(slide-03.jpg);
+    height: 700px;
+    width: 100%;
+    display: none;
+}
