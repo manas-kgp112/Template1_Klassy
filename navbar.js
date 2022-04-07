@@ -57,9 +57,29 @@ function func_left_shift_img() {
     }
 }
 
-// console.log(images.length);
+// creating slideshow for Menu page
+// let menu_images = [];
+let j = 0;
+menu_images = document.getElementsByClassName("card_image_slideshow_menu");
 
+let right_slider_menu = document.getElementById("right_arrow_menu");
+let left_slider_menu = document.getElementById("left_arrow_menu");
 
+right_slider_menu.onclick = function () {
+    move_right_images_menu()
+}
+
+function move_right_images_menu() {
+    if (j < 1) {
+        j++;
+    menu_images[j+4].style.display = "block";
+    menu_images[j-1].style.display = "none";
+    } else {
+        j++;
+        menu_images[j-2].style.display = "block";
+        menu_images[j-1].style.display = "none";
+    }
+}
 
 
 

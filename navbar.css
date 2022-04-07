@@ -63,6 +63,7 @@ body{
     padding: 0 15px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     color: #fb5849 !important;
     letter-spacing: 1px;
 }
@@ -70,6 +71,7 @@ body{
     padding: 0 15px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
     height: 40px;
     transition: color 0.3s ease-in-out;
@@ -78,6 +80,7 @@ body{
     padding: 0 15px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: color 0.3s ease-in-out;
 }
@@ -85,6 +88,7 @@ body{
     padding: 0 15px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: color 0.3s ease-in-out;
 }
@@ -92,6 +96,7 @@ body{
     padding: 0 30px 0 0;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: color 0.3s ease-in-out;
     position: relative;
@@ -147,6 +152,7 @@ body{
 
 #submenu_nav a{
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     font-weight: 100 !important;
     /* font-weight: lighter; */
     text-decoration: none;
@@ -156,6 +162,7 @@ body{
     padding: 0 0 0 15px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     color: #fb5849 !important;
     letter-spacing: 1px;
 }
@@ -226,7 +233,7 @@ body{
 }
 
 #right_content_home{
-    height: 800px;
+    height: 700px;
     width: 66.6666%;
     /* background-color: aqua; */
     display: flex;
@@ -255,6 +262,7 @@ body{
     background-color: #fb5849;
     border-radius: 50%;
     opacity: 0.4;
+    transition: all 0.2s ease-in-out;
 }
 
 #right_arrow:hover{
@@ -282,4 +290,410 @@ body{
     height: 700px;
     width: 100%;
     display: none;
+}
+
+
+/* about page  */
+
+#about_body{
+    padding: 100px 0 0 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#left_content_about{
+    width: 570px;
+    padding: 0px 15px;
+}
+#right_content_about{
+    width: 570px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* designing left about elements */
+#left_content_about h6{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fb5849;
+    padding: 0 0 0 40px;
+}
+#left_content_about h2{
+    margin: 20px 0 25px 0;
+    padding: 0px 120px 0 0;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold !important;
+}
+
+#left_content_about p{
+    margin: 0 0 25px 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+#left_content_about p a{
+    text-decoration: none;
+}
+#left_content_about div{
+    display: flex;
+}
+.image_left_content_about{
+    height: 160px;
+    width: 190px;
+    padding: 0 15px;
+}
+
+#image1_left_content_about{
+    background-image: url(about-thumb-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#image2_left_content_about{
+    background-image: url(about-thumb-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#image3_left_content_about{
+    background-image: url(about-thumb-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* designing right about elements */
+#image_right_content_about{
+    background-image: url(about-video-bg.jpg);
+    width: 510px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image_right_content_about i{
+    color: white;
+}
+
+#image_right_content_about a{
+    padding: 26px 29px;
+    background-color: #fb5849;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* menu page designing */
+#menu_body{
+    margin: 120px 0 0 0;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#head_row_menu{
+    width: 1140px;
+    display: flex;
+    justify-content: left;
+}
+#head_row_stack_menu{
+    width: 380px;
+    padding: 0 15px;
+    height: 198px;
+}
+
+#head_row_stack_menu h6{
+    font-size: 15px;
+    color: #fb5849;
+    font-family: 'Poppins:100', sans-serif;
+}
+#head_row_stack_menu h2{
+    margin: 20px 0 25px 0;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* menu image slideshow */
+#image_slideshow_menu{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_image_slideshow_menu{
+    height: 400px;
+    width: 18%;
+    position: relative;
+}
+.price_card_image_slideshow_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-color: #fb5849;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price_card_image_slideshow_menu h6{
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#card6_image_slideshow_menu{
+    display: none;
+    background-image: url(menu-item-03.jpg);
+}
+#card1_image_slideshow_menu{
+    background-image: url(menu-item-01.jpg);
+    background-repeat: no-repeat;
+}
+#card2_image_slideshow_menu{
+    background-image: url(menu-item-02.jpg);
+    background-repeat: no-repeat;
+}
+#card3_image_slideshow_menu{
+    background-image: url(menu-item-03.jpg);
+    background-repeat: no-repeat;
+}
+#card4_image_slideshow_menu{
+    background-image: url(menu-item-04.jpg);
+    background-repeat: no-repeat;
+}
+#card5_image_slideshow_menu{
+    background-image: url(menu-item-05.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/* slider for menu */
+#slider_image_slideshow_menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    color: #fb5849;
+}
+#slider_image_slideshow_menu span{
+    width: 25px;
+}
+
+#slider_image_slideshow_menu i:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* chefs page designing */
+#chefs_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 0 0;
+}
+
+#head_chefs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 380px;
+    padding: 0 15px;
+}
+
+#head_chefs h6{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fb5849;
+    letter-spacing: 2px;
+}
+
+#head_chefs h2{
+    margin: 20px 0 25px 0;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+#chef_gallery_chefs{
+    width: 1140px;
+    display: flex;
+}
+.chef_gallery_card_cover{
+    width: 33.333333%;
+    height: 420.15px;
+    padding: 0 15px;
+}
+
+.chef_gallery_card{
+    border: 1px solid #afafaf;
+    height: 100%;
+    padding: 5px;
+}
+.chef_gallery_card_image{
+    height: 320.15px;
+}
+
+#chef_gallery_card_image1{
+    background-image: url(chefs-01.jpg);
+    background-repeat: no-repeat;
+}
+#chef_gallery_card_image2{
+    background-image: url(chefs-02.jpg);
+    background-repeat: no-repeat;
+}
+#chef_gallery_card_image3{
+    background-image: url(chefs-03.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.chef_gallery_card_text{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chef_gallery_card_text h4{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.chef_gallery_card_text p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/* conatact us page block designing */
+#contact_us_body{
+    margin: 120px 0 0 0;
+    padding: 120px 0;
+    height: 785.9px;
+    background-image: url(reservation-bg.jpg);
+    display: flex;
+    justify-content: center;
+}
+#contact_us_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact_us_cell_wrap{
+    height: fit-content;
+    width: 570px;
+    padding: 0 15px;
+}
+#contact_us_cell{
+    height: 100%;
+}
+#table_reservation_cell{
+    width: 570px;
+    height: 100%;
+    padding: 0 15px;
+}
+#contact_form{
+    height: 100%;
+}
+#contact{
+    padding: 45px 30px;
+    margin: 0 0 0 30px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+#contact_handles{
+    width: 100%;
+    display: flex;
+}
+#contact_phone{
+    width: 50%;
+    height: 161.4px;
+    padding: 0 15px;
+}
+#contact_email{
+    width: 50%;
+    padding: 0 15px;
+    height: 161.4px;
+}
+.card_contact{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.contact_logo_wrap{
+    position: absolute;
+    top: -15%;
+    left: 35%;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #fb5849;
+    color: white;
+}
+.card_contact h4{
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.card_contact p{
+    margin: 0 !important;
+    color: black !important;
+    font-weight: 300 !important;
+}
+
+/* contact us content design */
+#contact_us_cell h6{
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+#contact_us_cell h2{
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 20px 0 30px 0;
+    line-height: 40px;
+}
+#contact_us_cell p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0 0 65px 0;
+    color: white;
+    line-height: 25px;
+}
+#contact h4{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0 0 30px 0;
 }
