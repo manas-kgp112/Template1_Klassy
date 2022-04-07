@@ -84,6 +84,35 @@ function move_right_images_menu() {
 
 
 
+// transition effect on chef's social media handles
+let card = document.getElementsByClassName("chef_gallery_card");
+let card_social_media = document.getElementsByClassName("chef_social_media");
+let card_color = document.getElementsByClassName("chef_gallery_card_image_color_overlay");
+let card_text = document.getElementsByClassName("chef_gallery_card_text");
+let card_head = document.getElementsByTagName("h4");
+
+for (let i = 0; i < card.length; i++) {
+    card[i].onmouseover = function () {
+        card_color[i].style.backgroundColor = "black";
+        card_color[i].style.opacity = "0.7";
+        card[i].style.borderColor = "#fb5849"
+        card_head[i+1].style.color = "#fb5849"
+        card_social_media[i].style.display = "flex";
+    } 
+}
+
+for (let i = 0; i < card.length; i++) {
+    card[i].onmouseout = function () {
+        card_color[i].style.backgroundColor = "";
+        // card_color[i].style.opacity = "0.7";
+        card[i].style.borderColor = "#afafaf";
+        card_head[i+1].style.color = "black";
+        card_social_media[i].style.display = "none";
+    } 
+}
+
+
+
 
 
 

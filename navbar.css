@@ -545,7 +545,63 @@ body{
 }
 .chef_gallery_card_image{
     height: 320.15px;
+    position: relative;
 }
+
+.chef_gallery_card_image_color_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.chef_social_media{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 45%;
+    left: 30%;
+    display: none;
+}
+.color_overlay_facebook{
+    padding: 10px 13px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1 !important;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+.color_overlay_google{
+    padding: 10px 11.5px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1 !important;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+.color_overlay_instagram{
+    padding: 10px 12px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1 !important;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.color_overlay_facebook:hover{
+    cursor: pointer;
+    background-color: #fb5849;
+}
+.color_overlay_google:hover{
+    cursor: pointer;
+    background-color: #fb5849;
+}
+.color_overlay_instagram:hover{
+    cursor: pointer;
+    background-color: #fb5849;
+}
+
 
 #chef_gallery_card_image1{
     background-image: url(chefs-01.jpg);
@@ -648,15 +704,25 @@ body{
     justify-content: flex-end;
     position: relative;
 }
-.contact_logo_wrap{
+.contact_logo_wrap_ph{
     position: absolute;
     top: -15%;
     left: 35%;
-    padding: 25px;
+    padding: 25px 22px;
     border-radius: 50%;
     background-color: #fb5849;
     color: white;
 }
+.contact_logo_wrap_email{
+    position: absolute;
+    top: -15%;
+    left: 35%;
+    padding: 25px 22px;
+    border-radius: 50%;
+    background-color: #fb5849;
+    color: white;
+}
+
 .card_contact h4{
     margin: 15px 0 10px 0;
     font-size: 20px;
@@ -696,4 +762,232 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 0 0 30px 0;
+}
+
+
+
+
+
+/* offers page layout design */
+#offers_body{
+    padding: 120px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#head_offers_wrap{
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+}
+#head_offers{
+    width: 350px;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#head_offers h6{
+    font-size: 15px;
+    color: #fb5849;
+    font-weight: 500;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#head_offers h2{
+    font-size: 30px;
+    font-weight: 900;
+    width: 100%;
+    margin: 20px 0 25px 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+
+#time_table_menu{
+    width: 540px;
+    display: flex;
+    height: 89.5px;
+    justify-content: center;
+}
+.time_table_card{
+    width: 86px;
+    height: 52px;
+    margin: 0 20px 15px 20px;
+}
+
+#breakfast{
+    background-image: url(tab-icon-01.png);
+    position: relative;
+}
+#breakfast h6{
+    position: absolute;
+    left: 10% !important;
+    bottom: -65%;
+    color: #fb5849;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#lunch{
+    background-image: url(tab-icon-02.png);
+    position: relative;
+}
+#lunch h6{
+    position: absolute;
+    left: 25% !important;
+    bottom: -65%;
+    color: #fb5849;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#dinner{
+    background-image: url(tab-icon-03.png);
+    position: relative;
+}
+#dinner h6{
+    position: absolute;
+    left: 20% !important;
+    bottom: -65%;
+    color: #fb5849;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* offers menu design */
+#offers_menu{
+    width: 1140px;
+    /* padding: 0 15px; */
+    display: flex;
+    margin-top: 50px;
+}
+.offers_menu_row{
+    width: 50%;
+}
+.offers_menu_list{
+    margin: 0 15px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.item_col{
+    height: 100px;
+    width: 100%;
+    margin: 0 0 60px 0;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.item_image{
+    height: 100%;
+    width: 100px !important;
+    background-repeat: no-repeat;
+    margin: 0 20px 0 0;
+    background-size: cover;
+    border-radius: 5px;
+}
+#item_image1{
+    background-image: url(tab-item-01.png);
+}
+#item_image2{
+    background-image: url(tab-item-02.png);
+}
+#item_image3{
+    background-image: url(tab-item-03.png);
+}
+#item_image4{
+    background-image: url(tab-item-04.png);
+}
+#item_image5{
+    background-image: url(tab-item-05.png);
+}
+#item_image6{
+    background-image: url(tab-item-06.png);
+}
+
+.item_price{
+    height: 70%;
+    width: 70px;
+    background-color: #fb5849;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_price h6{
+    font-size: 18px;
+    font-weight: 700;
+}
+.item_text{
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+}
+.item_text h4{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.item_text p{
+    font-size: 14px;
+    font-weight: 300 !important;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* footer section design */
+#footer_body{
+    width: 100%;
+    margin: 60px 0 0 0;
+    padding: 50px 0;
+    height: 155px;
+    background-color: #fb5849;
+    display: flex;
+    justify-content: center;
+}
+#footer_body div{
+    width: 380px;
+    padding: 0 15px;
+    margin: 5px 0 0 0;
+}
+#social_handles_footer{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+#social_handles_footer a{
+    height: 44px;
+    font-size: 16px;
+    color: #fb5849;
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#logo_footer{
+    background-image: url(white-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#copyright_footer{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: right;
+    line-height: 25px;
+    color: white;
+    font-size: 14px;
+}
+#copyright_footer p{
+    text-align: right;
 }
