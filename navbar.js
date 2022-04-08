@@ -114,7 +114,25 @@ for (let i = 0; i < card.length; i++) {
 
 
 
+// making nav_bar sticky after some scroll
+window.onscroll = function () {
+    scroll_nav_bar()
+}
 
+function scroll_nav_bar () {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("header_stick").style.position = "sticky";
+        document.getElementById("header_stick").style.top = "0"; 
+        document.getElementById("header_stick").style.height = "80px"; 
+        document.getElementById("main_nav").style.alignItems = "center"; 
+    }else {
+        document.getElementById("header_stick").style.position = "";
+        document.getElementById("header_stick").style.height = "100px"; 
+        document.getElementById("main_nav").style.alignItems = "flex-end"; 
+    }
+}
+
+console.log("hi mf");
 
 
 
